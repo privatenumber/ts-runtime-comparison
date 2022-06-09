@@ -1,0 +1,10 @@
+{
+	"compilerOptions": {
+		"module": "esnext",
+		"allowJs": true,
+	},
+	"ts-node": {
+		"transpileOnly": true,
+		"experimentalResolver": true,
+	}
+}

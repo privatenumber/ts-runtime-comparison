@@ -1,0 +1,14 @@
+{
+	"compilerOptions": {
+		"module": "node16",
+		"allowJs": true,
+		"esModuleInterop": true,
+		"paths": {
+			"prefix/*": ["./resolution/*"]
+		}
+	},
+	"ts-node": {
+		"transpileOnly": true,
+		"experimentalResolver": true,
+	}
+}

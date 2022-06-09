@@ -1,6 +1,6 @@
 # TypeScript runtime comparisons
 
-Comaprison of TypeScript  runtimes.
+Comparison of TypeScript runtimes.
 
 > **Disclaimer:** This comparison is by the author & maintainer of [tsx]
 

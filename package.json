@@ -16,6 +16,7 @@
 		"get-node": "^13.0.1",
 		"jiti": "^1.13.0",
 		"markdown-table": "^3.0.2",
+		"sucrase": "^3.21.0",
 		"ts-node": "^10.8.0",
 		"tsm": "^2.2.1",
 		"tsx": "github:esbuild-kit/tsx#built/ts-paths",

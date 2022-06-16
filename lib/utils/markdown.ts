@@ -5,3 +5,5 @@ export const img = (url: string) => `![](${url})`;
 export const PASS = '✅';
 
 export const FAIL = '❌';
+
+export const CLICKABLE = ' <sup>?</sup>';

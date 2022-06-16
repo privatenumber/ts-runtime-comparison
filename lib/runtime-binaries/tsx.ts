@@ -1,5 +1,5 @@
 import { createRuntime } from '../utils/create-runtime';
-import { link, PASS, FAIL } from '../utils/markdown';
+import { link, PASS, FAIL, CLICKABLE } from '../utils/markdown';
 
 export default createRuntime({
 	name: 'tsx',
@@ -8,11 +8,11 @@ export default createRuntime({
 	binaryPath: './node_modules/tsx/dist/cli.js',
 	performance: {
 		compiler: link('esbuild', 'https://esbuild.github.io/'),
-		diskCache: link(PASS, 'https://github.com/esbuild-kit/tsx#cache'),
+		diskCache: link(PASS + CLICKABLE, 'https://github.com/esbuild-kit/tsx#cache'),
 	},
 	dx: {
-		tsRepl: link(PASS, 'https://github.com/esbuild-kit/tsx#repl'),
-		watchMode: link(PASS, 'https://github.com/esbuild-kit/tsx#watch-mode'),
+		tsRepl: link(PASS + CLICKABLE, 'https://github.com/esbuild-kit/tsx#repl'),
+		watchMode: link(PASS + CLICKABLE, 'https://github.com/esbuild-kit/tsx#watch-mode'),
 		typeChecking: FAIL,
 		hidesWarnings: PASS,
 		binaries: link('tsx', 'https://github.com/esbuild-kit/tsx/blob/3e81d19bf759b512eb74360861f5abeb9d638ef0/package.json#L30'),

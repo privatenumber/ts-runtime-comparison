@@ -1,5 +1,5 @@
 import { createRuntime } from '../utils/create-runtime';
-import { link, PASS } from '../utils/markdown';
+import { link, PASS, CLICKABLE } from '../utils/markdown';
 
 export default createRuntime({
 	name: 'esbuild-runner',
@@ -8,7 +8,7 @@ export default createRuntime({
 	binaryPath: './node_modules/esbuild-runner/bin/esr.js',
 	performance: {
 		compiler: link('esbuild', 'https://esbuild.github.io/'),
-		diskCache: link(PASS, 'https://github.com/folke/esbuild-runner/blob/9dfb19f8fdead4d56abe4b70fe16bde745fd4d9c/src/cli.ts#L12'),
+		diskCache: link(PASS + CLICKABLE, 'https://github.com/folke/esbuild-runner/blob/9dfb19f8fdead4d56abe4b70fe16bde745fd4d9c/src/cli.ts#L12'),
 	},
 	dx: {
 		tsRepl: false,

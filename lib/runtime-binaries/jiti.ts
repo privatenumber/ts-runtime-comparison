@@ -1,5 +1,5 @@
 import { createRuntime } from '../utils/create-runtime';
-import { link, PASS } from '../utils/markdown';
+import { link, PASS, CLICKABLE } from '../utils/markdown';
 
 export default createRuntime({
 	name: 'jiti',
@@ -8,7 +8,7 @@ export default createRuntime({
 	binaryPath: './node_modules/jiti/bin/jiti.js',
 	performance: {
 		compiler: link('Babel', 'https://github.com/unjs/jiti/blob/main/package.json#L26'),
-		diskCache: link(PASS, 'https://github.com/unjs/jiti#cache'),
+		diskCache: link(PASS + CLICKABLE, 'https://github.com/unjs/jiti#cache'),
 	},
 	dx: {
 		tsRepl: false,

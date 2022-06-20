@@ -1,6 +1,6 @@
 # TypeScript runtime comparisons
 
-Comparison of TypeScript runtimes.
+Comparison of Node.js TypeScript runtimes.
 
 > **Disclaimer:** This comparison is by the author & maintainer of [tsx]
 

@@ -2,7 +2,7 @@
 	"private": true,
 	"files": [],
 	"scripts": {
-		"start": "tsx lib",
+		"start": "tsx scripts/compare",
 		"lint": "eslint ."
 	},
 	"dependencies": {

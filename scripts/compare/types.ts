@@ -1,4 +1,4 @@
-import { type TestSuiteResult } from './utils/test'
+import { type TestSuiteResult } from './utils/test';
 
 export type RuntimeData = {
 	name: string;

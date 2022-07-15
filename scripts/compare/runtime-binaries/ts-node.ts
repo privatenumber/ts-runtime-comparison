@@ -1,5 +1,7 @@
 import { createRuntime } from '../utils/create-runtime';
-import { link, PASS, FAIL, CLICKABLE } from '../utils/markdown';
+import {
+	link, PASS, FAIL, CLICKABLE,
+} from '../utils/markdown';
 
 export default createRuntime({
 	name: 'ts-node',

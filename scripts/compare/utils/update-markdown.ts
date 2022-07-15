@@ -1,8 +1,8 @@
 import fs from 'fs/promises';
 import { markdownTable } from 'markdown-table';
 import commentMark from 'comment-mark';
-import { link } from './markdown';
 import type { Runtime, RuntimeTested } from '../types';
+import { link } from './markdown';
 
 function renderTable(
 	results: RuntimeTested[],
@@ -30,7 +30,7 @@ function renderTable(
 		align: headings.map(column => (column ? 'c' : 'l')),
 	});
 
-	return (showTestTitle ? `#### ${results[0][property].title}` : '') + `\n${table}`;
+	return `${showTestTitle ? `#### ${results[0][property].title}` : ''}\n${table}`;
 }
 
 export async function updateMarkdown(

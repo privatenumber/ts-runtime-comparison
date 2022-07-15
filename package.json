@@ -7,6 +7,8 @@
 	},
 	"dependencies": {
 		"@pvtnbr/eslint-config": "^0.26.2",
+		"@swc/core": "^1.2.215",
+		"@swc/register": "^0.1.10",
 		"@types/node": "^18.0.4",
 		"comment-mark": "^1.1.1",
 		"esbuild": "^0.14.49",

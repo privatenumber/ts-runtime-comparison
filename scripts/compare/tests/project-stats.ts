@@ -29,14 +29,6 @@ export default createTest(binary => describe(
 		);
 
 		test(
-			'Bugs',
-			() => link(
-				img(`https://img.shields.io/github/issues-raw/${binary.githubRepo}/bug?color=red&label`),
-				`https://github.com/${binary.githubRepo}/issues?q=is%3Aissue+is%3Aopen+label%3Abug`,
-			),
-		);
-
-		test(
 			'Issues open',
 			() => link(
 				img(`https://img.shields.io/github/issues-raw/${binary.githubRepo}?color=orange&label`),

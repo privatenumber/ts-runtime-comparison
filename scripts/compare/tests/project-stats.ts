@@ -43,5 +43,9 @@ export default createTest(binary => describe(
 				`https://github.com/${binary.githubRepo}/issues?q=is%3Aissue+is%3Aclosed`,
 			),
 		);
+		test(
+			'Last commit',
+			() => img(`https://img.shields.io/github/last-commit/${binary.githubRepo}?label`),
+		);
 	},
 ));
